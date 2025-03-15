@@ -1,0 +1,6 @@
+@APC_HostAddress = http://localhost:5117
+
+GET {{APC_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

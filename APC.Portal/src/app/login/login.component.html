@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <form #editForm="ngForm" [formGroup]="loginForm" class="form-signin">       
+      <h2 class="form-signin-heading">APC login</h2>
+      <div class="form-group">
+          <input type="email" class="form-control" formControlName="email" id="email" placeholder="Email Address" required autofocus="" />
+      </div>
+      <div class="form-group">          
+          <input type="password" class="form-control" id="password" formControlName="password" required placeholder="Password" />      
+      </div>
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+      </label>
+      <button class="btn btn-lg btn-primary w-100" type="submit" (click)="login()">Login</button>   
+    </form>
+  </div>
